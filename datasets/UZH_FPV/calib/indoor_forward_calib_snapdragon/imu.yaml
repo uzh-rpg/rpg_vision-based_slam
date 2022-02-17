@@ -1,0 +1,7 @@
+  accelerometer_noise_density: 0.1
+  accelerometer_random_walk: 0.002
+  gyroscope_noise_density: 0.05
+  gyroscope_random_walk: 4.0e-05
+  rostopic: /snappy_imu
+  update_rate: 500.0
+

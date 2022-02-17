@@ -1,0 +1,22 @@
+dataset: UZH_FPV
+
+## Files
+# Measurements
+colmap_dir: "/home/giovanni/rpg_vision-based_slam/datasets/UZH_FPV/colmap/indoor_forward_3_snapdragon/output/0/"
+gp_fn: "/home/giovanni/rpg_vision-based_slam/datasets/UZH_FPV/raw/indoor_forward_3/leica_minimal.txt"
+
+# Results
+colmap_spline_dir: "/home/giovanni/rpg_vision-based_slam/results/UZH_FPV/indoor_forward_3_snapdragon/colmap_fitted_spline"
+spline_global_ref_alignment_dir: "/home/giovanni/rpg_vision-based_slam/results/UZH_FPV/indoor_forward_3_snapdragon/spline_global_alignment"
+
+## Parameters
+# spline
+spline_order: 6
+spline_control_nodes_dt_s: 0.1 # [s]
+# How to compute this: see initialize_spline_leica_time_offset_uzhfpv.py
+init_t_offset_cam_gp: 1540815358.044
+optimize_pBP: true # pBP = body - antenna / prism position offset
+optimize_spline_globsens_time_offset: true
+# optimization
+n_max_iters: 50
+n_threads: 4

@@ -1,0 +1,28 @@
+dataset: EuRoC
+
+## Files
+
+# Measurements
+imu_fn: "/home/giovanni/rpg_vision-based_slam/datasets/EuRoC/V2_01_easy/imu.txt"
+gp_fn: "/home/giovanni/rpg_vision-based_slam/datasets/EuRoC/V2_01_easy/gp_measurements_freq_10.0_hz_std_0.10_m.txt"
+
+# Final results
+full_batch_optimization_dir: "/home/giovanni/rpg_vision-based_slam/results/EuRoC/V2_01_easy/full_batch_optimization_gi"
+
+## Optimization
+n_max_iters: 200
+n_threads: 4
+
+## imu noise
+sigma_omega_c: 5e-5
+sigma_acc_c: 5e-4
+sigma_omega_bias_c: 0.0001
+sigma_acc_bias_c: 0.001
+
+## Parameters
+start_t: 1413393212.255760431290 # time of first image
+end_t: 1413393326.205760478973 # time of last image
+gp_std: 0.1 # [m]
+p_BP: [0.0, 0.0, 0.0] # body - antenna / prism position offset
+optimize_pBP: false # pBP = body - antenna / prism position offset
+optimize_t_offset_globsens_imu: false

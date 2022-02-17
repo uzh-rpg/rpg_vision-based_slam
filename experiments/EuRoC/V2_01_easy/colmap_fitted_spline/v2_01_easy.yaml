@@ -1,0 +1,19 @@
+## Files
+# Measurements
+colmap_fn: "/home/giovanni/rpg_vision-based_slam/datasets/EuRoC/colmap/V2_01_easy/output/0/colmap_body_estimates.txt"
+
+# Results
+colmap_spline_dir: "/home/giovanni/rpg_vision-based_slam/results/EuRoC/V2_01_easy"
+
+## Parameters
+# groundtruth
+start_t: 1413393212.255760431290 # time of first image
+end_t: 1413393319.755760431290 # time of last image
+
+# spline
+spline_control_nodes_dt_s: 0.1
+
+# optimization
+num_errors: 1000
+n_max_iters: 20
+n_threads: 4

@@ -1,0 +1,12 @@
+dataset: EuRoC
+
+## Files
+# Measurements
+colmap_dir: "/home/giovanni/rpg_vision-based_slam/datasets/UZH_FPV/colmap/indoor_forward_3_snapdragon/output/0/colmap_body_estimates.txt"
+gp_fn: "/home/giovanni/rpg_vision-based_slam/datasets/UZH_FPV/raw/indoor_forward_3/leica_minimal.txt"
+
+# Results
+colmap_global_ref_alignment_dir: "/home/giovanni/rpg_vision-based_slam/results/UZH_FPV/indoor_forward_3_snapdragon/colmap_global_alignment"
+
+## Parameters
+init_t_offset_cam_gp: 1540815358.097743

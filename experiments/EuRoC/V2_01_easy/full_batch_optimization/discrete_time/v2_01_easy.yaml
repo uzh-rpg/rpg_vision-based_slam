@@ -1,0 +1,42 @@
+dataset: EuRoC
+
+## Files
+# Calibration
+cam_id: 1
+camimu_calib_fn: /home/giovanni/rpg_vision-based_slam/datasets/EuRoC/calib/Vicon_room/calib.yaml
+
+# Measurements
+imu_fn: "/home/giovanni/rpg_vision-based_slam/datasets/EuRoC/V2_01_easy/imu.txt"
+gp_fn: "/home/giovanni/rpg_vision-based_slam/datasets/EuRoC/V2_01_easy/gp_measurements_freq_10.0_hz_std_0.10_m.txt"
+colmap_dir: "/home/giovanni/rpg_vision-based_slam/datasets/EuRoC/colmap/V2_01_easy/output/0/"
+colmap_fn: "/home/giovanni/rpg_vision-based_slam/datasets/EuRoC/colmap/V2_01_easy/output/0/colmap_cam_estimates.txt"
+
+# Initialization
+alignment_dir: "/home/giovanni/rpg_vision-based_slam/results/EuRoC/V2_01_easy/colmap_global_alignment"
+
+# Final results
+full_batch_optimization_dir: "/home/giovanni/rpg_vision-based_slam/results/EuRoC/V2_01_easy/full_batch_optimization"
+
+## Optimization
+n_max_iters: 50
+n_threads: 4
+
+## reprojection noise
+sigma_reproj_px: 1.0
+
+## imu noise
+sigma_omega_c: 0.0005
+sigma_acc_c: 0.005
+sigma_omega_bias_c: 0.008
+sigma_acc_bias_c: 0.01
+
+## Parameters
+grid_cell_size: 70
+start_t: 1413393212.255760431290 # time of first image
+end_t: 1413393319.755760431290 # time of last image
+gp_std: 0.1 # [m]
+t_offset_cam_gp_init: 0.0 # [s]
+p_BP: [0.0, 0.0, 0.0] # body - antenna / prism position offset
+optimize_scale: false
+optimize_pBP: false # pBP = body - antenna / prism position offset
+optimize_t_offset_globsens_imu: true

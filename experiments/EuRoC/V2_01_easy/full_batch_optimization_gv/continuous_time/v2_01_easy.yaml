@@ -1,0 +1,44 @@
+dataset: EuRoC
+
+## Files
+# Calibration
+cam_id: 1
+camimu_calib_fn: /home/giovanni/rpg_vision-based_slam/datasets/EuRoC/calib/Vicon_room/calib.yaml
+
+# Measurements
+imu_fn: "/home/giovanni/rpg_vision-based_slam/datasets/EuRoC/V2_01_easy/imu.txt"
+gp_fn: "/home/giovanni/rpg_vision-based_slam/datasets/EuRoC/V2_01_easy/gp_measurements_freq_10.0_hz_std_0.10_m.txt"
+colmap_dir: "/home/giovanni/rpg_vision-based_slam/datasets/EuRoC/colmap/V2_01_easy/output/0/"
+
+# Initialization
+colmap_spline_dir: "/home/giovanni/rpg_vision-based_slam/results/EuRoC/V2_01_easy/colmap_fitted_spline"
+spline_global_ref_alignment_dir: "/home/giovanni/rpg_vision-based_slam/results/EuRoC/V2_01_easy/spline_global_alignment"
+
+# Final results
+full_batch_optimization_dir: "/home/giovanni/rpg_vision-based_slam/results/EuRoC/V2_01_easy/full_batch_optimization_gv"
+
+## Spline parameters
+spline_control_nodes_dt_s: 0.1
+
+## Optimization
+# n_iters = n_max_inner_iters * n_max_inner_iters + 1
+n_max_inner_iters: 50
+n_max_outer_iters: 1
+n_threads: 4
+
+## reprojection noise
+sigma_reproj_px: 1.0
+
+## imu noise
+sigma_omega_c: 0.05
+sigma_acc_c: 0.1
+sigma_omega_bias_c: 4.0e-05
+sigma_acc_bias_c: 0.002
+
+## Parameters
+grid_cell_size: 30
+gp_std: 0.1 # [m]
+optimize_scale: false
+optimize_pBP: false # pBP = body - antenna / prism position offset
+optimize_spline_globsens_time_offset: true
+sampling_spline_rate: 20.0 # [hz]

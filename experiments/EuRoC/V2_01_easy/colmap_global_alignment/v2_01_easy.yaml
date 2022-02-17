@@ -1,0 +1,12 @@
+dataset: EuRoC
+
+## Files
+# Measurements
+colmap_dir: "/home/giovanni/rpg_vision-based_slam/datasets/EuRoC/colmap/V2_01_easy/output/0/colmap_body_estimates.txt"
+gp_fn: "/home/giovanni/rpg_vision-based_slam/datasets/EuRoC/V2_01_easy/gp_measurements_freq_10.0_hz_std_0.10_m.txt"
+
+# Results
+colmap_global_ref_alignment_dir: "/home/giovanni/rpg_vision-based_slam/results/EuRoC/V2_01_easy/colmap_global_alignment"
+
+## Parameters
+init_t_offset_cam_gp: 0.0

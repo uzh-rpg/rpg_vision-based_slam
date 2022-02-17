@@ -1,0 +1,21 @@
+dataset: EuRoC
+
+## Files
+# Measurements
+gp_fn: "/home/giovanni/rpg_vision-based_slam/datasets/EuRoC/V2_01_easy/gp_measurements_freq_10.0_hz_std_0.10_m.txt"
+
+# Results
+spline_dir: "/home/giovanni/rpg_vision-based_slam/results/EuRoC/V2_01_easy"
+
+## Parameters
+# groundtruth
+start_t: 1413393212.255760431290 # time of first image
+end_t: 1413393326.205760478973 # time of last image
+
+# spline
+spline_control_nodes_dt_s: 0.1
+
+# optimization
+num_errors: 1000
+n_max_iters: 20
+n_threads: 4
