@@ -78,6 +78,9 @@ find_package(yaml-cpp)
 include_directories(thirdparty/Sophus)
 include_directories(include)
 
+add_executable(align_colmap_to_imu src/align_colmap_to_imu.cpp)
+target_link_libraries(align_colmap_to_imu ${CERES_LIBRARIES} yaml-cpp)
+
 add_executable(fit_spline_to_colmap src/fit_spline_to_colmap.cpp)
 target_link_libraries(fit_spline_to_colmap ${CERES_LIBRARIES} yaml-cpp)
 

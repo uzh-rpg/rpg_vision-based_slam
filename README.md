@@ -263,7 +263,7 @@ For discrete time:
 
 **Visual-Inertial SLAM**
 
-The estimated trajectory by COLMAP needs to be aligned to a gravity aligned frame. [This script]() is a good starting point to estimate gravity direction using accelerometer measurements. 
+The estimated trajectory by COLMAP needs to be aligned to a gravity aligned frame. [This script](https://github.com/uzh-rpg/rpg_vision-based_slam/blob/main/src/align_spline_to_global_frame.cpp) is a good starting point to estimate gravity direction using accelerometer measurements. 
 
 For continuous time:
 
