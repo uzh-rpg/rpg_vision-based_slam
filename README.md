@@ -1,7 +1,7 @@
 # RPG Vision-based SLAM
 
-<!-- ![RPG Vision-based SLAM](img/frontimage.png) -->
-<!-- <p style="text-align:center;"> <img src="img/frontimage.png" alt="RAL2021_Cioffi" width="300" height="500"/> -->
+<!--![RPG Vision-based SLAM](img/intro.png) -->
+<p style="text-align:center;"> <img src="img/intro.png" alt="RAL2021_Cioffi" width="700" height="300"/>
 
 ## Publication
 If you use this code in an academic context, please cite the following [RA-L 2022 paper](http://rpg.ifi.uzh.ch/docs/RAL2021_Cioffi.pdf).
