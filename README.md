@@ -1,4 +1,4 @@
-# RPG Vision-based SLAM
+# Continuous- and discrete-time vision-based SLAM
 
 <!--![RPG Vision-based SLAM](img/intro.png) -->
 <p style="text-align:center;"> <img src="img/intro.png" alt="RAL2021_Cioffi" width="700" height="300"/>
